@@ -97,13 +97,13 @@ Due to the lack of data.. Data augmentation is one of the technics that allow us
 
 ### Keras image Processing functions
 
-Keras propose functions to process data. Since data augmentation since has been widely used in deep learning, keras impliments functions that performs data augmentation. We call call the function like following
+Keras propose functions to process data. Since data augmentation since has been widely used in deep learning, keras has implemented functions that perform data augmentation. We call the function as following
 
 ```python
-from keras.preprocessing.image import ImageDataGenerator 
+from keras.preprocessing.image import ImageDataGenerator
 ```
 
-To perform Data augmentation. You can run the python script i provide
+To perform Data augmentation. You can run the python script `augData.py` I provide
 
 ```shell
 python augData.py
