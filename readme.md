@@ -35,9 +35,9 @@ git clone https://github.com/deepKratos/eikonon.git
 - Windows users
 
 ```shell
-python -m venv myenv # creates a virtual environement 
+python -m venv myenv # creates a virtual environement
 cd myenv\Scripts # change folder
-.\activate # activate environement 
+.\activate # activate environement
 ```
 
 - Linux users
@@ -62,13 +62,13 @@ To execute the code:
 
 `python eikonon <number of seconds> <path to save images>`
 
-- Examples 1 -- take pictures every "2 seconds" and save to "images" folder in the same directory: 
+- Examples 1 -- take a capture every "2 seconds" and save it to the "images" folder in the same directory:
 
 ```shell
 python eikonon 2 images
 ```
 
-- Example 2 -- take pictures every "5 seconds" and save to "test" folder in the same directory: 
+- Example 2 -- take a capture every "5 seconds" and save it to the "test" folder in the same directory: 
 
 ```shell
 python eikonon 5 test
