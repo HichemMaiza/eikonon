@@ -73,6 +73,7 @@ python eikonon 2 images
 ```shell
 python eikonon 5 test
 ```
+[Screen shot of execution Resutls](res.png)
 
 ## Debug code
 
@@ -85,6 +86,8 @@ python eikonon 5 test
   - write_to_folder(...) -- write images to the chosen path folder
 
 - eikonon.py : main script code
+
+## Data Augmentation
 
 ## Author
 
