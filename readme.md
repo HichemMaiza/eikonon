@@ -73,7 +73,8 @@ python eikonon 2 images
 ```shell
 python eikonon 5 test
 ```
-[Screen shot of execution Resutls](res.png)
+
+![Screen shot of execution Resutls](res.png)
 
 ## Debug code
 
