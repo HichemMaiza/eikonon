@@ -23,11 +23,11 @@ def initialize_parameters(camera_index = 0 , seconds = 2):
         seconds  -- to choose number of frames per second to save
 
         returns 
-        parameters -- a dictionary of parameters 
+        parameters -- a dictionary of parameters contains cam_object, frame_per_second, threshold
         """
 
         cam_object = cv2.VideoCapture(camera_index)
-        frame_per_second = cam_object.get(cv2.CAP_PROP_FPS) # Gets the frames per second
+        frame_per_second = cam_object.get(cv2.CAP_PROP_FPS) 
         threshold = frame_per_second * seconds
          
         parameters = {

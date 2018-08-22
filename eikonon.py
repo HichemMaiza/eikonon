@@ -33,7 +33,6 @@ def main() :
     parameters = initialize_parameters(camera_index = 0 , seconds = seconds)
 
     cam_object = parameters['cam_object']
-    #frame_per_second = parameters['frame_per_second']  
     threshold = parameters['threshold']
 
     frameId = 1

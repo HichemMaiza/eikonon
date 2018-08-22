@@ -27,7 +27,7 @@ I will be using:
 ### Download github repo
 
 ```shell
-git clone
+git clone https://github.com/deepKratos/eikonon.git
 ```
 
 ### Create virtual environement
@@ -85,6 +85,10 @@ python eikonon 5 test
   - write_to_folder(...) -- write images to the chosen path folder
 
 - eikonon.py : main script code
+
+## Author
+
+- **Hichem MAIZA**
 
 ## Acknoldgement
 
