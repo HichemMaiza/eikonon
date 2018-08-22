@@ -24,7 +24,7 @@ I will be using:
 
 ## Installation
 
-### Download github repo
+### Download github repository
 
 ```shell
 git clone https://github.com/deepKratos/eikonon.git
@@ -83,13 +83,35 @@ python eikonon 5 test
 I always save my datasets into a numpy array so I can manipulate them easily, so if you want to transform your data into a Huge numpy array.
 
 ```python
-from utils import *
+from utils import save_images_to_array
 # pass your folders name in list_folders variable
 # pass True to save_npy variable
 save_images_to_array(list_folders = ['images-hichem'], save_npy = True)
 ```
 
 it's done now you have two numpy arrays, `X.npy` which contains the images and `Y.npy` which contains labels
+
+## Data augmentation
+
+Due to the lack of data.. Data augmentation is one of the technics that allow us to get more data by applying morphological and geometrical transformations to our original data. Data augmentation can be done by applying filters to images, or flipping it or even add brightness to it.
+
+### Keras image Processing functions
+
+Keras propose functions to process data. Since data augmentation since has been widely used in deep learning, keras impliments functions that performs data augmentation. We call call the function like following
+
+```python
+from keras.preprocessing.image import ImageDataGenerator 
+```
+
+To perform Data augmentation. You can run the python script i provide
+
+```shell
+python augData.py
+```
+
+### Screen shot of execution shows the new data
+
+![Screen shot of execution Resutls](res2.png)
 
 ## Debug code
 
