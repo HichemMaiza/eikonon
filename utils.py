@@ -1,4 +1,12 @@
+# Author : Hichem MAIZA 
+# License : Feel free to use and/or modify the code
+
+# import system librairies 
+import os, sys
+
+# import 3rd party librairies
 import cv2
+import numpy as np
 
 def show_window(image, name = 'TestWindow', shape = (128,128)):
 
@@ -57,4 +65,44 @@ def write_to_folder(classId, numImage, image, shape = (64,64), folder_path = 'im
         'numImage': numImage
     }
 
+    return parameters 
+
+def save_images_to_array(list_folders = ['images-hichem', 'images-sami'], save_npy = False):
+
+    """ list of folders -- every folder has some images which belongs to a specific person
+
+    args 
+    list_folders -- list of folders which contains images it has a default value 
+    of ['images-hichem', 'images-sami'] which represent my folders 
+    you have to change it so it fits your naming policy. 
+
+    returns 
+    parameters -- a dictionnary of parameters 
+    parameters['X'] -- a numpy array of shape [n_example,64,64,3] 
+    parameters['X'] -- a numpy array of shape [n_example,]
+
+    """
+
+    Y = []
+    X = []
+
+    for folder in list_folders:
+
+        list_files = os.listdir(folder)
+        for f in list_files:
+            image = cv2.imread(os.path.join(folder,f))
+            Y.append(f[6])
+            X.append(image)
+
+    if save_npy == True:
+
+        np.save('X', X)
+        np.save('Y', Y)
+
+    parameters = {
+
+        'X': np.array(X),
+        'Y': np.array(Y) 
+    }
+    
     return parameters

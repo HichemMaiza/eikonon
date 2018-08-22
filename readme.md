@@ -78,6 +78,19 @@ python eikonon 5 test
 
 ![Screen shot of execution Resutls](res.png)
 
+### Save to .npy arrays (Optional)
+
+I always save my datasets into a numpy array so I can manipulate them easily, so if you want to transform your data into a Huge numpy array.
+
+```python
+from utils import *
+# pass your folders name in list_folders variable
+# pass True to save_npy variable
+save_images_to_array(list_folders = ['images-hichem'], save_npy = True)
+```
+
+it's done now you have two numpy arrays, `X.npy` which contains the images and `Y.npy` which contains labels
+
 ## Debug code
 
 - utils.py : contains helper functions
