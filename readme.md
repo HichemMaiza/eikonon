@@ -131,6 +131,6 @@ python augData.py
 
 ## Acknoldgement
 
-- **Pr. Emmanuel Morin** for his great advice: Hichem, If you need data, creat it !
-
+- **Pr. Emmanuel Morin** for his great advices: Hichem, If you need data, creat it !
+- **Siraj Raval** for his motivation videos
 - **Intel for OpenCV**
