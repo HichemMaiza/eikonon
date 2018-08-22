@@ -74,7 +74,7 @@ python eikonon 2 images
 python eikonon 5 test
 ```
 
-### Screen shot of execution Resutls
+### Screen shot of execution Results
 
 ![Screen shot of execution Resutls](res.png)
 
