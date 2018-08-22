@@ -2,7 +2,7 @@
 
 In this tutorial I will go through the creation of an image dataset. The purpose of this tutorial is to give you an idea on how it is easy to create your own dataset and to publish it on the internet so others can use it.
 
-## Define purpose
+## Define goals
 
 People create data sets to serve a specific purpose, so they can solve a real world problem or facilitate some difficult tasks through artificial intelligence. In other words, train models to perform a human being task.
 To train a model we have to feed it with data. it is not always the case, but in general, the more data we have! the best performance we get!
