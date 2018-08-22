@@ -90,8 +90,6 @@ python eikonon 5 test
 
 - eikonon.py : main script code
 
-## Data Augmentation
-
 ## Author
 
 - **Hichem MAIZA**
